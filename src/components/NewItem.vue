@@ -113,7 +113,7 @@
     },
     computed: {
       formTitle() {
-        return this.editIndex === -1 ? "New Book" : "Edit Book";
+        return this.editIndex === -1 ? "New Farm Details" : "Edit Farm Details";
       },
       
   },
