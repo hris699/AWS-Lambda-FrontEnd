@@ -1,10 +1,10 @@
 <template>
   <div>
     <NewItem
-      :editBook="showDialog"
+      :editFarm="showDialog"
       :editItem="editedItem"
       :editIndex="editIndex"
-      v-on:addBook="addData($event)"
+      v-on:addFarm="addData($event)"
       @show="showDialog = false"
       v-on:closeDialog="showDialog = false"
     />
@@ -43,7 +43,7 @@
   </div>
 </template>
 <script>
-import NewItem from "../components/NewItem.vue";
+import NewItem from "./NewItem.vue";
 import axios from "axios";
 export default {
   farm_id: "farmsTable",

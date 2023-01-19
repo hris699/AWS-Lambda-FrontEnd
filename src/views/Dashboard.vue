@@ -1,17 +1,17 @@
 <template>
 <div>
     
-  <BooksTable />
+  <FarmsTable />
 </div>
   
 </template>
 <script>
-import BooksTable from '../components/BooksTable.vue';
+import FarmsTable from '../components/FarmsTable.vue';
 export default {
 
   name:'Dashboard_',
   components:{
-    BooksTable 
+    FarmsTable 
   }
 }
 </script>

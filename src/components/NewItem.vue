@@ -27,7 +27,7 @@
         >
           mdi-plus
         </v-icon>
-          Add Book
+          Add Farm
         </v-btn>
       </template>
 
@@ -107,7 +107,7 @@
 
     }),
     props:{
-      editBook:Boolean,
+      editFarm:Boolean,
       editItem:Object,
       editIndex:Number
     },
@@ -118,8 +118,8 @@
       
   },
     watch: {
-      editBook(){
-        if (this.editBook){
+      editFarm(){
+        if (this.editFarm){
             this.dialog= true
         }else{
           this.close()
@@ -139,8 +139,8 @@
       });
     },
       save(){
-        this.$emit("addBook",this.listItem)
-        this.$emit('show',this.editBook)
+        this.$emit("addFarm",this.listItem)
+        this.$emit('show',this.editFarm)
         this.listIndex = -1;
         this.dialog=false;
       },
